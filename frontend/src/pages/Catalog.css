@@ -1,0 +1,31 @@
+.catalog { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem 4rem; }
+.catalog__hero {
+  text-align: center;
+  padding: 4rem 0 2rem;
+}
+.catalog__hero h1 { font-size: 2.5rem; color: #1a1a1a; margin: 0 0 0.5rem; }
+.catalog__hero p { color: #777; font-size: 1.1rem; margin: 0; }
+
+.catalog__filters { margin-bottom: 2rem; }
+.catalog__search { width: 100%; max-width: 500px; display: block; margin: 0 auto 1rem; }
+.catalog__genres { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; }
+
+.genre-pill {
+  padding: 0.35rem 1rem;
+  border-radius: 999px;
+  border: 1px solid #ddd;
+  background: #fff;
+  color: #666;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.15s;
+}
+.genre-pill:hover { border-color: #e07b00; color: #e07b00; }
+.genre-pill--active { background: #e07b00; border-color: #e07b00; color: #fff; font-weight: 700; }
+
+.catalog__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.25rem;
+}
+.catalog__loading, .catalog__empty { text-align: center; color: #999; padding: 4rem; }

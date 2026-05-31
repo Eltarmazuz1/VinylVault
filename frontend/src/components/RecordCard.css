@@ -1,0 +1,37 @@
+.record-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid #e8e8e8;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+.record-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+.record-card__cover { position: relative; aspect-ratio: 1; overflow: hidden; background: #f0f0ee; }
+.record-card__cover img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s; }
+.record-card:hover .record-card__cover img { transform: scale(1.05); }
+.record-card__overlay {
+  position: absolute;
+  top: 8px; left: 8px;
+}
+.record-card__genre {
+  background: rgba(224,123,0,0.9);
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.record-card__info { padding: 12px; flex: 1; }
+.record-card__title { color: #1a1a1a; font-size: 0.95rem; font-weight: 600; margin: 0 0 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.record-card__artist { color: #777; font-size: 0.85rem; margin: 0 0 10px; }
+.record-card__footer { display: flex; align-items: center; justify-content: space-between; }
+.record-card__price { color: #e07b00; font-weight: 700; font-size: 0.95rem; }

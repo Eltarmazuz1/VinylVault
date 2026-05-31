@@ -1,0 +1,24 @@
+.profile { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+.profile-loading { text-align: center; color: #999; padding: 4rem; }
+.profile__header { margin-bottom: 2rem; }
+.profile__header h1 { color: #1a1a1a; margin: 0 0 0.25rem; }
+.profile__email { color: #aaa; font-size: 0.9rem; margin: 0; }
+
+.profile__stats { display: flex; gap: 1.5rem; margin-bottom: 2rem; flex-wrap: wrap; }
+.stat { background: #fff; border: 1px solid #e8e8e8; border-radius: 10px; padding: 1.25rem 2rem; text-align: center; box-shadow: 0 1px 4px rgba(0,0,0,0.04); }
+.stat__value { display: block; font-size: 2rem; font-weight: 700; color: #e07b00; }
+.stat__label { font-size: 0.8rem; color: #999; }
+
+.profile__tabs { display: flex; gap: 0; margin-bottom: 1.5rem; border-bottom: 1px solid #eee; }
+.tab { background: none; border: none; color: #999; cursor: pointer; padding: 0.75rem 1.5rem; font-size: 0.95rem; border-bottom: 2px solid transparent; margin-bottom: -1px; transition: all 0.15s; }
+.tab:hover { color: #1a1a1a; }
+.tab--active { color: #e07b00; border-bottom-color: #e07b00; font-weight: 600; }
+
+.profile__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1.25rem; }
+.profile__empty { color: #999; text-align: center; padding: 3rem; }
+
+.ratings-list { display: flex; flex-direction: column; gap: 0.75rem; }
+.rating-row { background: #fff; border: 1px solid #e8e8e8; border-radius: 8px; padding: 1rem; display: flex; justify-content: space-between; align-items: flex-start; cursor: pointer; transition: border-color 0.15s; box-shadow: 0 1px 4px rgba(0,0,0,0.04); }
+.rating-row:hover { border-color: #e07b00; }
+.rating-row__review { color: #666; font-size: 0.85rem; margin: 0.4rem 0 0; }
+.rating-row__date { color: #bbb; font-size: 0.8rem; white-space: nowrap; margin-left: 1rem; }

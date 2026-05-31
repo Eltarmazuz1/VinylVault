@@ -1,0 +1,27 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 64px;
+  background: #fff;
+  border-bottom: 1px solid #e8e8e8;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+.navbar__brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #e07b00;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.navbar__icon { font-size: 1.2rem; }
+.navbar__actions { display: flex; align-items: center; gap: 1rem; }
+.navbar__user { color: #888; font-size: 0.9rem; }
+.navbar__link { color: #444; text-decoration: none; font-size: 0.9rem; }
+.navbar__link:hover { color: #e07b00; }

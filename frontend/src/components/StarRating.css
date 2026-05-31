@@ -1,0 +1,7 @@
+.stars { display: flex; align-items: center; gap: 2px; }
+.star { font-size: 1.4rem; color: #ddd; cursor: pointer; transition: color 0.1s; line-height: 1; }
+.star--filled { color: #e07b00; }
+.stars--readonly .star { cursor: default; }
+.stars--sm .star { font-size: 1rem; }
+.stars--lg .star { font-size: 1.8rem; }
+.star-label { font-size: 0.8rem; color: #888; margin-left: 4px; }
