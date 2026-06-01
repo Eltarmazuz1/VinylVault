@@ -50,7 +50,6 @@ router.post('/login', async (req, res) => {
       TableName: TABLE,
       FilterExpression: 'email = :e',
       ExpressionAttributeValues: { ':e': email },
-      Limit: 1,
     }));
 
     const user = result.Items?.[0];
